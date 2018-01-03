@@ -1,0 +1,18 @@
+package recursion;
+
+public class GCD {
+	
+	public static int gcd(int n1,int n2) {
+		int ans;
+		if(n2==0) ans=n1;
+		else ans=gcd(n2,n1%n2);
+		return ans;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n1=23;
+		int n2=9;
+		System.out.println(gcd(n1,n2));
+	}
+
+}

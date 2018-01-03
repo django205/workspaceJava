@@ -1,0 +1,23 @@
+package pro;
+
+import java.util.Scanner;
+
+public class CountDigit {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int num1,num2,count=0;
+		num1=sc.nextInt();
+		num2=sc.nextInt();
+	//	System.out.println(num1+"   "+num2);
+		String s=Integer.toString(num1);
+		for(int i=0;i<s.length();i++) {
+			if(s.charAt(i)==Integer.toString(num2).charAt(0)) {
+				count++;
+			}
+		}
+		System.out.println(count);
+	}
+
+}

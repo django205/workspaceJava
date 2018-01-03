@@ -1,0 +1,21 @@
+package recursion;
+
+public class Power {
+
+	public static int power(int x,int n) {
+		
+		int temp=1;
+		if(n==0) return 1;
+		temp=power(x,n/2);
+		if(n%2==0) return temp*temp;
+		else return x*temp*temp;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		int p=power(2,8);
+		System.out.println(p);
+	}
+
+}

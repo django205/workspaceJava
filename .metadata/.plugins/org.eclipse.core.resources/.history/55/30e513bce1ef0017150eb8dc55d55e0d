@@ -1,0 +1,27 @@
+package pro;
+
+public class Pattern26 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int N=5;
+		int count1=1,count2;
+		for(int i=1;i<=N;i++) {
+			
+			count2=count1+i;
+		//	int flag=-1;
+			for(int j=1;j<=i;j++,count1++) {
+				//flag for toggling
+				//if(flag==1)
+				if(j!=i)	System.out.print("*");
+				//flag=1;
+				
+				if(i%2==0) System.out.print(--count2);
+				else System.out.print(count1); 
+				
+			}
+			System.out.println();
+		}
+	}
+
+}

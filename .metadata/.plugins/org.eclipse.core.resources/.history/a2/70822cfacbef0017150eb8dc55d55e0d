@@ -1,0 +1,22 @@
+package pro;
+
+public class Pattern26 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int N=5;
+		int count=1;
+		for(int i=1;i<=N;i++) {
+			int flag=-1;
+			for(int j=1;j<=i;j++,count++) {
+				if(flag==1) System.out.print("*");
+				flag=1;
+				if(i%2==0) System.out.print(count+i);
+				else System.out.print(count);
+				
+			}
+			System.out.println();
+		}
+	}
+
+}

@@ -1,0 +1,25 @@
+package pro;
+
+public class Trapezium {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	int N=4;int count=1;
+		for(int i=1;i<=N;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print("*");
+			}
+//			for(int k=10-2*i;k>=1;k--) {
+//				System.out.print(" "+count++);
+//			}
+			for(int k=N+1-i;k>=1;k--) {
+				System.out.print(" "+count++);
+			}
+			for(int k=N+1-i;k>=1;k--) {
+				System.out.print(" "+count++);
+			}
+			System.out.println();
+		}
+	}
+
+}

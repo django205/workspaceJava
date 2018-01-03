@@ -1,0 +1,18 @@
+package recursion;
+
+public class ReverseNumber {
+	static int sum;
+	public static int reverse(int n) {
+		int temp;
+		if(n==0) return sum;
+		sum=sum*10+n%10;
+		reverse(n/10);
+		return sum;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=123456;
+		System.out.println(reverse(n));
+	}
+
+}
